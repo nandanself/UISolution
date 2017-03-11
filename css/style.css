@@ -1,0 +1,81 @@
+body{
+  background: white;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.modal-box {
+    position: fixed;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    bottom:0px;
+    right:0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 20px;
+}
+
+@-webkit-keyframes animatetop {
+    from {right:-300px; opacity:0}
+    to {right:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {right:-300px; opacity:0}
+    to {right:0; opacity:1}
+}
+
+
+.modal-box .image-box{
+  height: 200px;
+  width: 150px;
+  background: grey;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-box .image-box .image-container {
+  height: 50%;
+}
+
+.modal-box .image-box .image-container .left-image{
+  width: 50%;
+  float: left;
+}
+
+.modal-box .image-box .image-container .right-image{
+  width: 50%;
+  float: left;
+}
+
+.modal-box .image-box img{
+  object-fit:contain;
+  width: 100%;
+  height: 100%;
+}
